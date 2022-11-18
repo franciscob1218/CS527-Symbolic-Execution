@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: claripy
+Version: 9.2.25
+Summary: An abstraction layer for constraint solvers
+Home-page: https://github.com/angr/clairpy
+License: BSD 2 Clause
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: z3-solver (==4.10.2.0)
+Requires-Dist: cachetools
+Requires-Dist: decorator
+Requires-Dist: pysmt (>=0.9.1.dev119)
+Provides-Extra: cvc4-solver
+Requires-Dist: cvc4-solver ; extra == 'cvc4-solver'
+
+# claripy
+
+Claripy is an abstracted constraint-solving wrapper.
+
+## Usage
+
+It is usable!
+
+General usage is similar to Z3:
+
+```python
+>>> import claripy
+>>> a = claripy.BVV(3, 32)
+>>> b = claripy.BVS('var_b', 32)
+>>> s = claripy.Solver()
+>>> s.add(b > a)
+>>> print(s.eval(b, 1)[0])
+```

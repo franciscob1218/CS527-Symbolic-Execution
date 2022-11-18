@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: archinfo
+Version: 9.2.25
+Summary: Classes with architecture-specific information useful to other projects.
+Home-page: https://github.com/angr/archinfo
+License: BSD 2 Clause
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# archinfo
+
+archinfo is a collection of classes that contain architecture-specific information.
+It is useful for cross-architecture tools (such as pyvex).
