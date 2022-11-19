@@ -24,7 +24,7 @@ print("Number of nodes in the graph:", numofnodes)
 print("Number of edges in the graph:", numofedges)
 
 main = proj.loader.main_object.get_symbol("main")
-#print(main)
+print(main)
 
 start_state = proj.factory.blank_state(addr=main.rebased_addr)
 #print(start_state)

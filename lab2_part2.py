@@ -31,7 +31,7 @@ for node in nodelist:
                 print("This is the Hex value of the Target Address:", hex(addr_target))
                 
                 initial_state = proj.factory.entry_state()
-                simulation = proj.factory.simgr(initial_state, resilience="False")
+                simulation = proj.factory.simgr(initial_state)
                 #print(initial_state)
                 
                 simulation.explore(find=addr_target)
